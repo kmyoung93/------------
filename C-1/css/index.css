@@ -1,0 +1,199 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+a{text-decoration: inherit; color: inherit;}
+img{max-width: 100%;}
+ul,ol{list-style: none;}
+
+html{
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+}
+
+.popup{
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    z-index: 300;
+    display: none;
+}
+
+.popup-ctrl{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-closed{
+    border: 1px solid #000;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.popup.on{
+    display: block;
+}
+
+.wrap{
+    width: 1000px;
+    display: flex;
+}
+
+header{
+    width: 200px;
+}
+
+main{
+    width: 800px;
+}
+
+.gnb a{
+    display: flex;
+    width: 180px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnb ul a{
+    height: 40px;
+}
+
+.gnb{
+    width: 180px;
+    margin: 0 auto;
+}
+
+.gnb>li{
+    max-height: 50px;
+    transition: all 1s ease 0s;
+    overflow: hidden;
+}
+
+.gnb>li:hover{
+    max-height: 250px;
+}
+
+.gnb li:hover>a{
+    max-height: 250px;
+    background-color: #000;
+    color: #fff;
+}
+
+.station{
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.train{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.train li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s ease 0s;
+    opacity: 0;
+}
+
+.train li.on{
+    opacity: 1;
+}
+
+.content{
+    height: 200px;
+    display: flex;
+}
+
+.content>section{
+    flex: 1;
+}
+
+.tabs{
+    display: flex;
+    gap: 10px;
+}
+
+.tabs a{
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.tabs a.on{
+    background-color: #000;
+    color: #fff;
+}
+
+.tab-desc{
+    font-size: 12px;
+}
+
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.tab-desc ul{
+    display: none;
+}
+
+.notice.on{
+    display: block;
+}
+
+.gallery.on{
+    display: flex;
+}
+
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a{
+    padding: 10px;
+    background-color: #fff;
+    color: purple;
+}
+
+.direct{
+    background: url(../img/direct.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direct a{
+    padding: 10px;
+    background-color: #fff;
+    color: purple;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fmenu{
+    display: flex;
+    gap: 20px;
+}

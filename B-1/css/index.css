@@ -1,0 +1,196 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    background-color: #fff;
+    color: #333;
+}
+
+.popup{
+    position: fixed;
+    left: 300px;
+    top: 300px;
+    width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    z-index: 2000;
+    display: none;
+}
+
+.popup.on{
+    display: block;
+}
+
+.popup-ctrl{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+#btn-close-popup{
+    border: 1px solid #000;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+header{
+    height: 100px;
+    position: relative;
+    z-index: 1000;
+}
+
+.common-frame{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header .common-frame{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gnb a{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gnb{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 25px;
+    transition: all 0.6s ease 0s;
+    max-height: 50px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.gnb:hover{
+    max-height: 250px;
+}
+
+.gnb li:hover>a{
+    background: #000;
+    color: #fff;
+}
+
+.logo{
+    margin-top: 30px;
+}
+
+.station{
+    height: 300px;
+    overflow: hidden;
+}
+
+.train{
+    width: 400%;
+    display: flex;
+}
+
+.train li{
+    flex: 1;
+}
+
+.content{
+    display: flex;
+    height: 200px;
+}
+
+.content>section{
+    flex: 1;
+}
+
+.tabs{
+    display: flex;
+    gap: 10px;
+}
+.tabs a{
+    border: 1px solid #000;
+    padding: 5px 10px;
+}
+
+.tabs a.on{
+    background-color: #000;
+    color: #fff;
+}
+
+.notice li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery{
+    display: flex;
+    gap: 10px;
+}
+
+.tab-desc>ul{
+    display: none;
+}
+
+.notice.on{
+    display: block;
+}
+
+.gallery.on{
+    display: flex;
+}
+
+.banner{
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direct{
+    background: url(../img/into.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a{
+    background-color: #fff;
+    color: blue;
+    padding: 5px 20px;
+}
+
+.direct a{
+    background-color: #fff;
+    color: blue;
+    padding: 5px 20px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+}
+
+footer .common-frame{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.f-menu{
+    display: flex;
+    gap: 20px;
+}
+
